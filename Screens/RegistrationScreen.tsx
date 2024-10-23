@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Dimensions,
   Image,
@@ -8,7 +7,7 @@ import {
   View,
 } from "react-native";
 import { colors } from "../styles/global";
-import Input from "../components/InputField";
+import InputField from "../components/InputField";
 import Button from "../components/Button";
 
 const { width: screenWidth } = Dimensions.get("screen");
@@ -30,9 +29,9 @@ const RegistrationScreen = () => {
         <View style={styles.photoContainer}></View>
         <Text style={styles.title}>Реєстрація</Text>
         <View style={styles.inputContainer}>
-          <Input placeholder="Логін" />
-          <Input placeholder="Адреса електронної пошти" />
-          <Input
+          <InputField placeholder="Логін" />
+          <InputField placeholder="Адреса електронної пошти" />
+          <InputField
             placeholder="Пароль"
             outerStyles={styles.passwordBtn}
             rightButton={passwordShow}

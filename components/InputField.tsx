@@ -4,7 +4,7 @@ import { FC, ReactNode } from "react";
 
 type InputProps = {
   placeholder?: string;
-  outerStyles?: ViewProps;
+  outerStyles?: ViewProps["style"];
   rightButton?: ReactNode;
 };
 

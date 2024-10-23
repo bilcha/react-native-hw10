@@ -10,7 +10,7 @@ import { FC } from "react";
 
 type ButtonProps = {
   text: string;
-  outerStyles?: ViewProps;
+  outerStyles?: ViewProps["style"];
 };
 
 const Button: FC<ButtonProps> = ({ text, outerStyles }) => {
